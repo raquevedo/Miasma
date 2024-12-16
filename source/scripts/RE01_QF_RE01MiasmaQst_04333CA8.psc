@@ -1,50 +1,15 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 22
+;NEXT FRAGMENT INDEX 35
 Scriptname RE01_QF_RE01MiasmaQst_04333CA8 Extends Quest Hidden
-
-;BEGIN ALIAS PROPERTY Mine
-;ALIAS PROPERTY TYPE LocationAlias
-LocationAlias Property Alias_Mine Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY WreckageActivator
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_WreckageActivator Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Zirath
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Zirath Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY MineEndMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_MineEndMarker Auto
-;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY WreckageMeetingMarker
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_WreckageMeetingMarker Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY dragonPriest
+;BEGIN ALIAS PROPERTY MineEntranceKey
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_dragonPriest Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY ReaverJournal
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_ReaverJournal Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY ReaverLord
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_ReaverLord Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY WreckMapMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_WreckMapMarker Auto
+ReferenceAlias Property Alias_MineEntranceKey Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Haj
@@ -52,26 +17,182 @@ ReferenceAlias Property Alias_WreckMapMarker Auto
 ReferenceAlias Property Alias_Haj Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY ReaverJournal
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_ReaverJournal Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Mine
+;ALIAS PROPERTY TYPE LocationAlias
+LocationAlias Property Alias_Mine Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY MineEntrance
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_MineEntrance Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY CellDoorMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_CellDoorMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY dragonPriest
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_dragonPriest Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY NextToWoundedSlaveMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_NextToWoundedSlaveMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY WreckMapMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_WreckMapMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Barrow
+;ALIAS PROPERTY TYPE LocationAlias
+LocationAlias Property Alias_Barrow Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY ZirathJournal
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_ZirathJournal Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY CellDoor
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_CellDoor Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY WreckageActivator
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_WreckageActivator Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY ReaverLord
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_ReaverLord Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY MineMapMarker
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_MineMapMarker Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY BarrowDoor
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BarrowDoor Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BarrowMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BarrowMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Player
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Player Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BarrowBlocker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BarrowBlocker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Zirath
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Zirath Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Slave
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Slave Auto
+;END ALIAS PROPERTY
+
+;BEGIN FRAGMENT Fragment_7
+Function Fragment_7()
+;BEGIN CODE
+SetObjectiveCompleted(10)
+SetObjectiveDisplayed(20)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0()
+;BEGIN CODE
+SetObjectiveDisplayed(10)
+Alias_ReaverJournal.GetReference().Enable()
+Alias_WreckMapMarker.GetReference().AddToMap()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_18
+Function Fragment_18()
+;BEGIN CODE
+setObjectiveCompleted(25)
+SetObjectiveDisplayed(30)
+Alias_MineEntranceKey.GetReference().Enable()
+Alias_Player.GetActorReference().AddItem(Alias_MineEntranceKey.GetReference())
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_30
+Function Fragment_30()
+;BEGIN CODE
+SetObjectiveCompleted(60)
+SetObjectiveDisplayed(70)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;BEGIN FRAGMENT Fragment_20
 Function Fragment_20()
 ;BEGIN CODE
-SetObjectiveCompleted(30)
-SetObjectiveDisplayed(40)
+setObjectiveCompleted(30)
+setObjectiveDisplayed(40)
 Alias_MineMapMarker.GetReference().AddToMap()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_2
-Function Fragment_2()
+;BEGIN FRAGMENT Fragment_24
+Function Fragment_24()
 ;BEGIN CODE
-SetObjectiveCompleted(20)
-SetObjectiveDisplayed(25)
+Alias_CellDoor.GetReference().Lock(False)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_28
+Function Fragment_28()
+;BEGIN CODE
+SetObjectiveCompleted(50)
+Alias_BarrowBlocker.GetReference().Disable()
+SetObjectiveDisplayed(60)
+Alias_BarrowMarker.GetReference().AddToMap()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_26
+Function Fragment_26()
+;BEGIN CODE
+SetObjectiveCompleted(50)
+SetObjectiveDisplayed(55)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_33
+Function Fragment_33()
+;BEGIN CODE
+SetObjectiveCompleted(80)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -87,32 +208,35 @@ SetObjectiveDisplayed(25)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_7
-Function Fragment_7()
+;BEGIN FRAGMENT Fragment_22
+Function Fragment_22()
 ;BEGIN CODE
-SetObjectiveCompleted(10)
-SetObjectiveDisplayed(20)
+setObjectiveCompleted(40)
+setObjectiveDisplayed(50)
+RE01MiasmaQstSlaveFoundScene.Start()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_18
-Function Fragment_18()
+;BEGIN FRAGMENT Fragment_2
+Function Fragment_2()
 ;BEGIN CODE
-SetObjectiveCompleted(25)
-SetObjectiveDisplayed(30)
+SetObjectiveCompleted(20)
+SetObjectiveDisplayed(25)
+Alias_Haj.GetActorReference().SetPlayerTeammate()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_0
-Function Fragment_0()
+;BEGIN FRAGMENT Fragment_31
+Function Fragment_31()
 ;BEGIN CODE
-SetObjectiveDisplayed(10)
-Alias_ReaverJournal.GetReference().Enable()
-Alias_WreckMapMarker.GetReference().AddToMap()
+SetObjectiveCompleted(70)
+SetObjectiveDisplayed(80)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+Scene Property RE01MiasmaQstSlaveFoundScene  Auto  
