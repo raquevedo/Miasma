@@ -1,35 +1,10 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 35
+;NEXT FRAGMENT INDEX 45
 Scriptname RE01_QF_RE01MiasmaQst_04333CA8 Extends Quest Hidden
 
-;BEGIN ALIAS PROPERTY WreckageMeetingMarker
+;BEGIN ALIAS PROPERTY Zirath
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_WreckageMeetingMarker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY MineEntranceKey
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_MineEntranceKey Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Haj
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Haj Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY ReaverJournal
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_ReaverJournal Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Mine
-;ALIAS PROPERTY TYPE LocationAlias
-LocationAlias Property Alias_Mine Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY MineEntrance
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_MineEntrance Auto
+ReferenceAlias Property Alias_Zirath Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY CellDoorMarker
@@ -37,9 +12,39 @@ ReferenceAlias Property Alias_MineEntrance Auto
 ReferenceAlias Property Alias_CellDoorMarker Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY Mine
+;ALIAS PROPERTY TYPE LocationAlias
+LocationAlias Property Alias_Mine Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Player
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Player Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY HajBow
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_HajBow Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BarrowBlocker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BarrowBlocker Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY dragonPriest
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_dragonPriest Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BarrowMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BarrowMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY ReaverLord
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_ReaverLord Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY NextToWoundedSlaveMarker
@@ -47,9 +52,34 @@ ReferenceAlias Property Alias_dragonPriest Auto
 ReferenceAlias Property Alias_NextToWoundedSlaveMarker Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY DragonPriestTrigger
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_DragonPriestTrigger Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY ReaverJournal
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_ReaverJournal Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY WreckMapMarker
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_WreckMapMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY MineMapMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_MineMapMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY WreckageMeetingMarker
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_WreckageMeetingMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BarrowDoor
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BarrowDoor Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Barrow
@@ -57,9 +87,19 @@ ReferenceAlias Property Alias_WreckMapMarker Auto
 LocationAlias Property Alias_Barrow Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY ZirathJournal
+;BEGIN ALIAS PROPERTY Haj
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_ZirathJournal Auto
+ReferenceAlias Property Alias_Haj Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY MineEntrance
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_MineEntrance Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY MineEntranceKey
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_MineEntranceKey Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY CellDoor
@@ -72,39 +112,9 @@ ReferenceAlias Property Alias_CellDoor Auto
 ReferenceAlias Property Alias_WreckageActivator Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY ReaverLord
+;BEGIN ALIAS PROPERTY ZirathJournal
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_ReaverLord Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY MineMapMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_MineMapMarker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY BarrowDoor
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_BarrowDoor Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY BarrowMarker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_BarrowMarker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Player
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Player Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY BarrowBlocker
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_BarrowBlocker Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Zirath
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Zirath Auto
+ReferenceAlias Property Alias_ZirathJournal Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Slave
@@ -112,11 +122,10 @@ ReferenceAlias Property Alias_Zirath Auto
 ReferenceAlias Property Alias_Slave Auto
 ;END ALIAS PROPERTY
 
-;BEGIN FRAGMENT Fragment_7
-Function Fragment_7()
+;BEGIN FRAGMENT Fragment_37
+Function Fragment_37()
 ;BEGIN CODE
-SetObjectiveCompleted(10)
-SetObjectiveDisplayed(20)
+; Zirath forcegreets player
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -131,44 +140,6 @@ Alias_WreckMapMarker.GetReference().AddToMap()
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_18
-Function Fragment_18()
-;BEGIN CODE
-setObjectiveCompleted(25)
-SetObjectiveDisplayed(30)
-Alias_MineEntranceKey.GetReference().Enable()
-Alias_Player.GetActorReference().AddItem(Alias_MineEntranceKey.GetReference())
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_30
-Function Fragment_30()
-;BEGIN CODE
-SetObjectiveCompleted(60)
-SetObjectiveDisplayed(70)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_20
-Function Fragment_20()
-;BEGIN CODE
-setObjectiveCompleted(30)
-setObjectiveDisplayed(40)
-Alias_MineMapMarker.GetReference().AddToMap()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_24
-Function Fragment_24()
-;BEGIN CODE
-Alias_CellDoor.GetReference().Lock(False)
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;BEGIN FRAGMENT Fragment_28
 Function Fragment_28()
 ;BEGIN CODE
@@ -176,15 +147,55 @@ SetObjectiveCompleted(50)
 Alias_BarrowBlocker.GetReference().Disable()
 SetObjectiveDisplayed(60)
 Alias_BarrowMarker.GetReference().AddToMap()
+Alias_Haj.GetActorReference().SetPlayerTeammate(False)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_26
-Function Fragment_26()
+;BEGIN FRAGMENT Fragment_35
+Function Fragment_35()
 ;BEGIN CODE
-SetObjectiveCompleted(50)
-SetObjectiveDisplayed(55)
+SetObjectiveCompleted(60)
+Alias_Zirath.GetActorReference().StartCombat(Alias_Player.GetActorReference())
+SetObjectiveDisplayed(65)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_30
+Function Fragment_30()
+;BEGIN CODE
+SetObjectiveDisplayed(70)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_18
+Function Fragment_18()
+;BEGIN CODE
+setObjectiveCompleted(25)
+SetObjectiveDisplayed(30)
+Alias_MineEntranceKey.GetReference().Enable()
+Alias_Player.GetActorReference().AddItem(Alias_MineEntranceKey.GetReference())
+Alias_Haj.GetActorReference().SetPlayerTeammate()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_43
+Function Fragment_43()
+;BEGIN CODE
+Alias_Player.GetActorReference().AddItem(Alias_HajBow.GetReference(), 1)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_22
+Function Fragment_22()
+;BEGIN CODE
+setObjectiveCompleted(40)
+setObjectiveDisplayed(50)
+RE01MiasmaQstSlaveFoundScene.Start()
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -208,12 +219,29 @@ SetObjectiveDisplayed(25)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_22
-Function Fragment_22()
+;BEGIN FRAGMENT Fragment_20
+Function Fragment_20()
 ;BEGIN CODE
-setObjectiveCompleted(40)
-setObjectiveDisplayed(50)
-RE01MiasmaQstSlaveFoundScene.Start()
+setObjectiveCompleted(30)
+setObjectiveDisplayed(40)
+Alias_MineMapMarker.GetReference().AddToMap()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_26
+Function Fragment_26()
+;BEGIN CODE
+SetObjectiveCompleted(50)
+SetObjectiveDisplayed(55)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_41
+Function Fragment_41()
+;BEGIN CODE
+Alias_Player.GetActorReference().AddItem(Gold001, 3000)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -223,7 +251,15 @@ Function Fragment_2()
 ;BEGIN CODE
 SetObjectiveCompleted(20)
 SetObjectiveDisplayed(25)
-Alias_Haj.GetActorReference().SetPlayerTeammate()
+WreckageAttackScene.Start()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_24
+Function Fragment_24()
+;BEGIN CODE
+Alias_CellDoor.GetReference().Lock(False)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -237,6 +273,27 @@ SetObjectiveDisplayed(80)
 EndFunction
 ;END FRAGMENT
 
+;BEGIN FRAGMENT Fragment_7
+Function Fragment_7()
+;BEGIN CODE
+SetObjectiveCompleted(10)
+SetObjectiveDisplayed(20)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_39
+Function Fragment_39()
+;BEGIN CODE
+SetObjectiveCompleted(65)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
 Scene Property RE01MiasmaQstSlaveFoundScene  Auto  
+
+MiscObject Property Gold001  Auto  
+
+Scene Property WreckageAttackScene  Auto  
