@@ -2,13 +2,4 @@
 ;NEXT FRAGMENT INDEX 1
 Scriptname RE01_TIF__0437092A Extends TopicInfo Hidden
 
-;BEGIN FRAGMENT Fragment_0
-Function Fragment_0(ObjectReference akSpeakerRef)
-Actor akSpeaker = akSpeakerRef as Actor
-;BEGIN CODE
-GetOwningQuest().SetStage(65)
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment

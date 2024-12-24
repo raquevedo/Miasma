@@ -1,12 +1,11 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 1
-Scriptname RE01_TIF__04366701 Extends TopicInfo Hidden
+;NEXT FRAGMENT INDEX 2
+Scriptname RE01_SF_RE01MiasmaQstDurvithI_0439916C Extends Scene Hidden
 
 ;BEGIN FRAGMENT Fragment_0
-Function Fragment_0(ObjectReference akSpeakerRef)
-Actor akSpeaker = akSpeakerRef as Actor
+Function Fragment_0()
 ;BEGIN CODE
-GetOwningQuest().SetStage(53)
+GetOwningQuest().SetStage(70)
 ;END CODE
 EndFunction
 ;END FRAGMENT

@@ -10,6 +10,7 @@ auto State waiting
 		if (Game.GetPlayer() == akNewContainer)
 ; 			Debug.Trace("Property set.")
                     myQST.ResearchNotesFound = True
+                    myQST.SetStage(55)
 			GoToState("inactive")
 		endif
 	EndEvent

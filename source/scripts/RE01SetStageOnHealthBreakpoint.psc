@@ -6,9 +6,13 @@ Int Property firstBreakpoint  Auto
 
 Int Property secondBreakpoint  Auto  
 
+Int Property finalBreakpoint  Auto  
+
 Int Property FirstStage  Auto  
 
 Int Property SecondStage  Auto  
+
+Int Property FinalStage  Auto  
 
 
 Quest Property myQuest  Auto  
@@ -25,5 +29,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		if GetActorReference().GetActorValue("Health") < secondBreakpoint
 			myQuest.SetStage(SecondStage)
 		endif
+	elseif GetActorReference().GetActorValue("Health") < finalBreakpoint
+		myQuest.SetStage(FinalStage)
 	endif
 EndEvent
