@@ -1,0 +1,20 @@
+Open the config ini file: CreationKitPlatformExtended.ini
+Current time: Thursday 26 Dec 2024 11:23:00 AM W. Europe Standard Time
+CRC32 executable file: 0xFFFFFFFF
+[WARNING] CRC32 does not match any of the known ones, running a version check by signature
+Current CK version: Skyrim Special Edition [v1.6.438]
+Creation Kit Platform Extended Runtime: Initialize (Version: 0.4.0.59, OS: 10.0 Build 19045)
+The processor has a number of threads: 16
+The processor has a number of logical cores: 16
+The processor has a number of physical cores: 8
+The processor implements hyper-threads technology: true
+The processor supports the SSE 4.1 instruction set: true
+The processor supports the AVX 2 instruction set: true
+Reading an option in the configuration: CreationKit:bUIClassicTheme
+The option is disabled in the configuration: CreationKit:bUIClassicTheme
+Reading an option in the configuration: CreationKit:bUIDarkTheme
+The option is disabled in the configuration: CreationKit:bUIDarkTheme
+Module base: 0000000140000000
+Section range ".text": (base: 0000000140001000, end: 0000000142E2C5BD)
+Section range ".rdata": (base: 0000000142E2D000, end: 00000001436AB879)
+Section range ".data": (base: 00000001436AC000, end: 00000001457D7781)
